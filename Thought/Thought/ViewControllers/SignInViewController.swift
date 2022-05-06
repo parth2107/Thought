@@ -20,13 +20,35 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func naviToHomeVC() {
+        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: Identifier.homeVC) as! HomeViewController
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
+    }
+    
+    //MARK: - Actions
     @IBAction func signInBtnTapped(_ sender: UIButton) {
         self.view.endEditing(true)
         if !self.isValidated() {
             return
         }
         
+        let email = textFieldEmail.text!.trim()
+        let password = textFieldPassword.text!.trim()
         
+        // Firebase sign in method
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+           // check for the error
+            if let error = error {
+                //TODO: Handle Error - use custom validation toast
+                jprint("Handle Error => \(error.localizedDescription)")
+            } else {
+                //Navigate to the home
+                jprint("loggedIn user info => \(String(describing: result!.user))")
+                self.naviToHomeVC()
+                
+            }
+        }
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
