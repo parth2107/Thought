@@ -10,6 +10,8 @@
 		1ECB5D79A1445E826A6C398B /* Pods_ThoughtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D82B91566BF9DB4A5FBE92 /* Pods_ThoughtTests.framework */; };
 		5907677228219CEF00BE2CD1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5907677128219CEF00BE2CD1 /* SignUpViewController.swift */; };
 		592F7BD8282191290058DB37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 592F7BD7282191290058DB37 /* GoogleService-Info.plist */; };
+		5968C8CE2821BDD20023E705 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5968C8CD2821BDD20023E705 /* StringExtension.swift */; };
+		5968C8D12821C43D0023E705 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5968C8D02821C43D0023E705 /* Constant.swift */; };
 		59C5F7DF2820763A0017E7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F7DE2820763A0017E7A6 /* AppDelegate.swift */; };
 		59C5F7E12820763A0017E7A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F7E02820763A0017E7A6 /* SceneDelegate.swift */; };
 		59C5F7E32820763A0017E7A6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F7E22820763A0017E7A6 /* SignInViewController.swift */; };
@@ -20,6 +22,8 @@
 		59C5F7F92820763C0017E7A6 /* ThoughtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F7F82820763C0017E7A6 /* ThoughtTests.swift */; };
 		59C5F8032820763C0017E7A6 /* ThoughtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F8022820763C0017E7A6 /* ThoughtUITests.swift */; };
 		59C5F8052820763C0017E7A6 /* ThoughtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5F8042820763C0017E7A6 /* ThoughtUITestsLaunchTests.swift */; };
+		59D8DBC52825850900C531D0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D8DBC42825850900C531D0 /* Home.storyboard */; };
+		59D8DBC72825852600C531D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8DBC62825852600C531D0 /* HomeViewController.swift */; };
 		959C5AA41897BC6B07594E92 /* Pods_Thought_ThoughtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CD47584B036DB9951FE7BB /* Pods_Thought_ThoughtUITests.framework */; };
 		FEA1A34042FE6F856B485A17 /* Pods_Thought.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69431F8C7EF0FAAF2E92347F /* Pods_Thought.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,8 @@
 		55A30BF59F0340C8608CB3EE /* Pods-ThoughtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtTests.release.xcconfig"; path = "Target Support Files/Pods-ThoughtTests/Pods-ThoughtTests.release.xcconfig"; sourceTree = "<group>"; };
 		5907677128219CEF00BE2CD1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		592F7BD7282191290058DB37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5968C8CD2821BDD20023E705 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5968C8D02821C43D0023E705 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		59C5F7DB2820763A0017E7A6 /* Thought.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thought.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C5F7DE2820763A0017E7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C5F7E02820763A0017E7A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		59C5F7FE2820763C0017E7A6 /* ThoughtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C5F8022820763C0017E7A6 /* ThoughtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtUITests.swift; sourceTree = "<group>"; };
 		59C5F8042820763C0017E7A6 /* ThoughtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59D8DBC42825850900C531D0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		59D8DBC62825852600C531D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		69431F8C7EF0FAAF2E92347F /* Pods_Thought.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thought.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0AE1D9648B5D499ABBD671 /* Pods-Thought-ThoughtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thought-ThoughtUITests.debug.xcconfig"; path = "Target Support Files/Pods-Thought-ThoughtUITests/Pods-Thought-ThoughtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87D82B91566BF9DB4A5FBE92 /* Pods_ThoughtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +120,7 @@
 			children = (
 				59C5F7E22820763A0017E7A6 /* SignInViewController.swift */,
 				5907677128219CEF00BE2CD1 /* SignUpViewController.swift */,
+				59D8DBC62825852600C531D0 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,9 +128,36 @@
 		590767742821A0A400BE2CD1 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				59C5F7EC2820763B0017E7A6 /* LaunchScreen.storyboard */,
 				59C5F7E42820763A0017E7A6 /* Main.storyboard */,
+				59D8DBC42825850900C531D0 /* Home.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5968C8CB2821BD900023E705 /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5968C8CF2821C41E0023E705 /* General */,
+				5968C8CC2821BDAB0023E705 /* Extension */,
+			);
+			path = OtherClasses;
+			sourceTree = "<group>";
+		};
+		5968C8CC2821BDAB0023E705 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5968C8CD2821BDD20023E705 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5968C8CF2821C41E0023E705 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5968C8D02821C43D0023E705 /* Constant.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		59C5F7D22820763A0017E7A6 = {
@@ -149,12 +185,12 @@
 		59C5F7DD2820763A0017E7A6 /* Thought */ = {
 			isa = PBXGroup;
 			children = (
-				590767742821A0A400BE2CD1 /* Storyboards */,
-				590767732821A06F00BE2CD1 /* ViewControllers */,
 				59C5F7DE2820763A0017E7A6 /* AppDelegate.swift */,
 				59C5F7E02820763A0017E7A6 /* SceneDelegate.swift */,
+				5968C8CB2821BD900023E705 /* OtherClasses */,
+				590767742821A0A400BE2CD1 /* Storyboards */,
+				590767732821A06F00BE2CD1 /* ViewControllers */,
 				59C5F7EA2820763B0017E7A6 /* Assets.xcassets */,
-				59C5F7EC2820763B0017E7A6 /* LaunchScreen.storyboard */,
 				59C5F7EF2820763B0017E7A6 /* Info.plist */,
 				59C5F7E72820763A0017E7A6 /* Thought.xcdatamodeld */,
 				592F7BD7282191290058DB37 /* GoogleService-Info.plist */,
@@ -302,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C5F7EE2820763B0017E7A6 /* LaunchScreen.storyboard in Resources */,
+				59D8DBC52825850900C531D0 /* Home.storyboard in Resources */,
 				592F7BD8282191290058DB37 /* GoogleService-Info.plist in Resources */,
 				59C5F7EB2820763B0017E7A6 /* Assets.xcassets in Resources */,
 				59C5F7E62820763A0017E7A6 /* Main.storyboard in Resources */,
@@ -432,8 +469,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5968C8D12821C43D0023E705 /* Constant.swift in Sources */,
 				59C5F7E32820763A0017E7A6 /* SignInViewController.swift in Sources */,
 				59C5F7DF2820763A0017E7A6 /* AppDelegate.swift in Sources */,
+				59D8DBC72825852600C531D0 /* HomeViewController.swift in Sources */,
+				5968C8CE2821BDD20023E705 /* StringExtension.swift in Sources */,
 				59C5F7E12820763A0017E7A6 /* SceneDelegate.swift in Sources */,
 				59C5F7E92820763A0017E7A6 /* Thought.xcdatamodeld in Sources */,
 				5907677228219CEF00BE2CD1 /* SignUpViewController.swift in Sources */,

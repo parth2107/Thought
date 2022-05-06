@@ -6,8 +6,12 @@ target 'Thought' do
   use_frameworks!
 
   # Pods for Thought
-pod 'Firebase/Auth'
-pod 'Firebase/Analytics'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Analytics'
+    pod 'IQKeyboardManagerSwift'
+    pod 'Firebase/Core'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'Firebase/Firestore'
 
 
   target 'ThoughtTests' do
