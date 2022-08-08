@@ -24,7 +24,8 @@ class SignUpViewController: UIViewController {
     }
     
     func naviToHomeVC() {
-        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: Identifier.homeVC) as! HomeViewController
+        let vc = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.tabBarVC) as! TabBarVC
+        vc.setAllVCs()
         self.view.window?.rootViewController = vc
         self.view.window?.makeKeyAndVisible()
     }
