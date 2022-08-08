@@ -16,6 +16,8 @@ struct Identifier {
     static let signUpVC = "SignUpViewController"
     static let signInVC = "SignInViewController"
     static let homeVC = "HomeViewController"
+    static let settingsVC = "SettingsViewController"
+    static let tabBarVC = "TabBarVC"
 }
 
 //MARK: - Global Functions

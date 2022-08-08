@@ -21,7 +21,8 @@ class SignInViewController: UIViewController {
     }
 
     func naviToHomeVC() {
-        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: Identifier.homeVC) as! HomeViewController
+        let vc = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.tabBarVC) as! TabBarVC
+        vc.setAllVCs()
         self.view.window?.rootViewController = vc
         self.view.window?.makeKeyAndVisible()
     }
@@ -29,12 +30,15 @@ class SignInViewController: UIViewController {
     //MARK: - Actions
     @IBAction func signInBtnTapped(_ sender: UIButton) {
         self.view.endEditing(true)
-        if !self.isValidated() {
-            return
-        }
+//        if !self.isValidated() {
+//            return
+//        }
         
-        let email = textFieldEmail.text!.trim()
-        let password = textFieldPassword.text!.trim()
+//        let email = textFieldEmail.text!.trim()
+//        let password = textFieldPassword.text!.trim()
+        
+        let email = "parthraval217@gmail.com"
+        let password = "Parth@12345"
         
         // Firebase sign in method
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
