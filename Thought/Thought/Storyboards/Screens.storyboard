@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="GMQ-Kp-I6w">
             <objects>
                 <viewController id="I4y-aW-21k" sceneMemberID="viewController">
@@ -23,13 +23,13 @@
                         <viewLayoutGuide key="safeArea" id="uld-Vv-nuW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="v0M-Ch-tuh"/>
+                    <tabBarItem key="tabBarItem" title="" image="stat" selectedImage="statSelected" id="v0M-Ch-tuh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B46-IT-kRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-540" y="355"/>
+            <point key="canvasLocation" x="-542" y="317"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="5iz-9p-VuN">
             <objects>
                 <viewController id="YQr-zu-ZuV" sceneMemberID="viewController">
@@ -39,16 +39,16 @@
                         <viewLayoutGuide key="safeArea" id="T8k-j5-u4X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7nJ-2h-ts0"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="homeSelected" id="7nJ-2h-ts0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJY-US-Koe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-540" y="-253"/>
+            <point key="canvasLocation" x="-541" y="-370"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="vaC-8F-cI8">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarVC" id="i5v-ad-aMb" customClass="TabBarVC" customModule="Thought" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i5v-ad-aMb" customClass="TabBarVC" customModule="Thought" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="StN-n1-YAD" customClass="CustomTabBar" customModule="Thought" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -78,11 +78,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR6-sF-PeF">
-                                <rect key="frame" x="30" y="44" width="44" height="44"/>
+                                <rect key="frame" x="30" y="60" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="search"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search thoughts..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tra-Mx-OEU">
+                                <rect key="frame" x="82" y="60" width="154" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -94,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="50"/>
+            <point key="canvasLocation" x="621.73913043478262" y="49.553571428571423"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="0l7-2e-Hnf">
@@ -130,7 +137,11 @@
         </designable>
     </designables>
     <resources>
-        <image name="search" width="19" height="19"/>
+        <image name="home" width="24" height="24"/>
+        <image name="homeSelected" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
+        <image name="stat" width="24" height="24"/>
+        <image name="statSelected" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
