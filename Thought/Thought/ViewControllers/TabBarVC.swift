@@ -19,9 +19,10 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
     }
     
     func setAllVCs() {
-        let icon1 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Second"), selectedImage: #imageLiteral(resourceName: "SecondSelected"))
-        let icon2 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Third"), selectedImage: #imageLiteral(resourceName: "ThirdSelected"))
-        let icon3 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Fourth"), selectedImage: #imageLiteral(resourceName: "FourthSelected"))
+        let icon1 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "home"), selectedImage: #imageLiteral(resourceName: "homeSelected"))
+        let icon2 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "stat"), selectedImage: #imageLiteral(resourceName: "statSelected"))
+        let icon3 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "note"), selectedImage: #imageLiteral(resourceName: "noteSelected"))
+        let icon4 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "setting"), selectedImage: #imageLiteral(resourceName: "settingSelected"))
         
         let homeVC = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.homeVC) as! HomeViewController
         let item1 = UINavigationController(rootViewController: homeVC)
@@ -31,11 +32,15 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         let item2 = UINavigationController(rootViewController: addVC)
         item2.tabBarItem = icon2
         
-        let settingsVC = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.settingsVC) as! SettingsViewController
-        let item3 = UINavigationController(rootViewController: settingsVC)
+        let thoughtsVC = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.settingsVC) as! SettingsViewController
+        let item3 = UINavigationController(rootViewController: thoughtsVC)
         item3.tabBarItem = icon3
         
-        let controllers = [item1, item2, item3]
+        let settingsVC = UIStoryboard(name: "Screens", bundle: nil).instantiateViewController(withIdentifier: Identifier.settingsVC) as! SettingsViewController
+        let item4 = UINavigationController(rootViewController: settingsVC)
+        item4.tabBarItem = icon4
+        
+        let controllers = [item1, item2, item3, item4]
         self.viewControllers = controllers
     }
     
@@ -72,10 +77,10 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.lightGray.withAlphaComponent(0.1).cgColor
         shapeLayer.fillColor = color?.cgColor ?? UIColor.white.cgColor
-        shapeLayer.lineWidth = 2
+//        shapeLayer.lineWidth = 2
         shapeLayer.shadowColor = UIColor.black.cgColor
         shapeLayer.shadowOffset = CGSize(width: 0, height: -3);
-        shapeLayer.shadowOpacity = 0.2
+//        shapeLayer.shadowOpacity = 0.2
         shapeLayer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radii).cgPath
         
         if let oldShapeLayer = self.shapeLayer {
