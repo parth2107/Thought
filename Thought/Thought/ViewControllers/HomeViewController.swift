@@ -9,6 +9,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var textFieldSearch: UITextField! {
+        didSet {
+            textFieldSearch.tintColor = UIColor.lightGray
+            textFieldSearch.setIcon(icon: UIImage(named: "search")!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

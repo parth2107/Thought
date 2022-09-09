@@ -8,8 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
         <array key="Quicksand-Regular.ttf">
             <string>Quicksand-Regular</string>
+        </array>
+        <array key="Quicksand-SemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -71,33 +77,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd8-2C-FPT">
-                                <rect key="frame" x="155" y="433" width="104.5" height="30"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR6-sF-PeF">
-                                <rect key="frame" x="30" y="60" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-e6-foa">
+                                <rect key="frame" x="30" y="119.5" width="354" height="98"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, Parth!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd8-2C-FPT">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Got some bright ideas today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQt-sa-1Oq">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="70"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="28"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Search thoughts..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-Xx-gRT">
+                                <rect key="frame" x="15" y="60" width="149.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p5-yE-G61" customClass="CustomBtn" customModule="Thought" customModuleProvider="target">
+                                <rect key="frame" x="317" y="56" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="55a-lC-pyF"/>
+                                    <constraint firstAttribute="height" constant="31" id="vtG-Tm-YtZ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="search"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search thoughts..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tra-Mx-OEU">
-                                <rect key="frame" x="82" y="60" width="154" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zd8-2C-FPT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QGg-JP-rqX"/>
-                            <constraint firstItem="zd8-2C-FPT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="WG1-qQ-3yh"/>
+                            <constraint firstAttribute="trailing" secondItem="qfk-e6-foa" secondAttribute="trailing" constant="30" id="BmE-Se-nsm"/>
+                            <constraint firstItem="qfk-e6-foa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="GP7-SK-s4n"/>
+                            <constraint firstItem="W7M-Xx-gRT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Jwe-bo-NNQ"/>
+                            <constraint firstItem="9p5-yE-G61" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="56" id="PFj-0g-FdQ"/>
+                            <constraint firstItem="qfk-e6-foa" firstAttribute="top" secondItem="W7M-Xx-gRT" secondAttribute="bottom" constant="38" id="VH9-ob-DeE"/>
+                            <constraint firstItem="W7M-Xx-gRT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="60" id="bSP-Y2-3HV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9p5-yE-G61" secondAttribute="trailing" constant="30" id="q6p-GK-WN6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textFieldSearch" destination="W7M-Xx-gRT" id="Cfm-qb-aFI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +165,6 @@
     <resources>
         <image name="home" width="24" height="24"/>
         <image name="homeSelected" width="24" height="24"/>
-        <image name="search" width="24" height="24"/>
         <image name="stat" width="24" height="24"/>
         <image name="statSelected" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
