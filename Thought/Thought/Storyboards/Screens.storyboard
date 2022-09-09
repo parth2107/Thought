@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-e6-foa">
-                                <rect key="frame" x="30" y="119.5" width="354" height="98"/>
+                                <rect key="frame" x="30" y="129.5" width="354" height="98"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, Parth!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd8-2C-FPT">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="20"/>
@@ -95,19 +95,29 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Search thoughts..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-Xx-gRT">
-                                <rect key="frame" x="15" y="60" width="149.5" height="21.5"/>
+                                <rect key="frame" x="15" y="70" width="149.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p5-yE-G61" customClass="CustomBtn" customModule="Thought" customModuleProvider="target">
-                                <rect key="frame" x="317" y="56" width="67" height="31"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEW-eX-nzb" customClass="CustomView" customModule="Thought" customModuleProvider="target">
+                                <rect key="frame" x="334" y="55" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvT-Gi-3yO">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="defaultUser"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36470588235294116" green="0.71764705882352942" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="55a-lC-pyF"/>
-                                    <constraint firstAttribute="height" constant="31" id="vtG-Tm-YtZ"/>
+                                    <constraint firstItem="vvT-Gi-3yO" firstAttribute="top" secondItem="vEW-eX-nzb" secondAttribute="top" id="Uwc-Md-GK1"/>
+                                    <constraint firstItem="vvT-Gi-3yO" firstAttribute="leading" secondItem="vEW-eX-nzb" secondAttribute="leading" id="ZyP-Lt-RjV"/>
+                                    <constraint firstAttribute="height" constant="50" id="ane-Y7-eLC"/>
+                                    <constraint firstAttribute="trailing" secondItem="vvT-Gi-3yO" secondAttribute="trailing" id="fpV-NM-4il"/>
+                                    <constraint firstAttribute="bottom" secondItem="vvT-Gi-3yO" secondAttribute="bottom" id="k30-6F-D3Z"/>
+                                    <constraint firstAttribute="width" constant="50" id="tDI-Pl-gzO"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                            </button>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,10 +125,10 @@
                             <constraint firstAttribute="trailing" secondItem="qfk-e6-foa" secondAttribute="trailing" constant="30" id="BmE-Se-nsm"/>
                             <constraint firstItem="qfk-e6-foa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="GP7-SK-s4n"/>
                             <constraint firstItem="W7M-Xx-gRT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Jwe-bo-NNQ"/>
-                            <constraint firstItem="9p5-yE-G61" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="56" id="PFj-0g-FdQ"/>
                             <constraint firstItem="qfk-e6-foa" firstAttribute="top" secondItem="W7M-Xx-gRT" secondAttribute="bottom" constant="38" id="VH9-ob-DeE"/>
-                            <constraint firstItem="W7M-Xx-gRT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="60" id="bSP-Y2-3HV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9p5-yE-G61" secondAttribute="trailing" constant="30" id="q6p-GK-WN6"/>
+                            <constraint firstItem="W7M-Xx-gRT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="70" id="bSP-Y2-3HV"/>
+                            <constraint firstAttribute="trailing" secondItem="vEW-eX-nzb" secondAttribute="trailing" constant="30" id="tbS-ZE-h08"/>
+                            <constraint firstItem="vEW-eX-nzb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="utE-Ol-oXF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -163,6 +173,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="defaultUser" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
         <image name="homeSelected" width="24" height="24"/>
         <image name="stat" width="24" height="24"/>
